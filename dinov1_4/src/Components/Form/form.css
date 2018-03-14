@@ -1,0 +1,26 @@
+.Form {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.Form > h2 {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.Label {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: .25em;
+}
+
+.Input {
+    width: 550px;
+}
+
+#textarea {
+    height: 100px;
+}
