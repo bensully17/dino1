@@ -5,7 +5,7 @@ const Footer = () => {
         display: 'flex',
         justifyContent: 'flex-start',
         paddingLeft: '2%',
-        position: 'absolute',
+        position: 'relative',
         bottom: '0',
         backgroundColor: 'white'
     }

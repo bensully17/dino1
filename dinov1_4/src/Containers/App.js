@@ -11,16 +11,21 @@ class App extends Component {
   state = {
     listings: []
   }
+  
+  addListing = (listing) => {
+    const list = this.state.listings
+    list.push(listing)
+    this.setState({list})
+  }
 
   componentDidMount() {
     fetch(api_url)
       .then(response => response.json())
       .then(response => this.setState({listings: response}))
-  }
-
-  postDataHandler = () => {
+    
     
   }
+
   render() {
     const listings = this.state.listings.reverse().map(listing => {
       return <Listing key={listing.id} title={listing.title} pay={listing.pay} desc={listing.description} dinos={listing.interested}/>
@@ -36,7 +41,7 @@ class App extends Component {
             </div>
           </div>
             
-          <Form />
+          <Form addListing={this.addListing}/>
         </div>
         <Footer />
       </div>
