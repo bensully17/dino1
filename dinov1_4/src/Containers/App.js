@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { Component } from 'react'
+import './App.css'
 import '../Components/Listings/Listing/Listing.css'
 import Header from '../Components/Header/Header'
 import Footer from '../Components/Footer/Footer'
@@ -21,9 +21,7 @@ class App extends Component {
   componentDidMount() {
     fetch(api_url)
       .then(response => response.json())
-      .then(response => this.setState({listings: response}))
-    
-    
+      .then(response => this.setState({listings: response})) 
   }
 
   render() {

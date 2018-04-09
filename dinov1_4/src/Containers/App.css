@@ -42,6 +42,7 @@ table {
 	border-spacing: 0;
 }
 /* -------------------------------RESET CSS--------------------------------- */
+
 .App {
   text-align: center;
   font-family: sans-serif;
@@ -55,6 +56,7 @@ table {
   padding-right: 30%;
   color: rgb(27, 153, 122);
 }
+
 .Main > div {
   display: flex;
   flex-direction: column;

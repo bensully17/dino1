@@ -7,9 +7,9 @@ const Header = () => {
         paddingLeft: '2%'
     }
     return ( 
-    <div style={style}>
-        <img src='./Assets/g-dino.png' alt='galvanize logo' style={{height: '100px' }}/>
-    </div>
+        <div style={style}>
+            <img src='./Assets/g-dino.png' alt='galvanize logo' style={{height: '100px' }}/>
+        </div>
     )
 }
 
